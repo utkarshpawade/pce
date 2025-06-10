@@ -1,0 +1,2 @@
+wget https://huggingface.co/heheyas/V3D/resolve/main/V3D.ckpt -O ckpts/V3D_512.ckpt
+wget https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt/resolve/main/svd_xt.safetensors -O ckpts/svd_xt.safetensors
