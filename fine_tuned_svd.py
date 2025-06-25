@@ -36,8 +36,6 @@ UtilModule = SourceFileLoader(
 ).load_module()
 default = UtilModule.default
 instantiate_from_config = UtilModule.instantiate_from_config
-
-# Configuration
 repo_path = r"C:\V3D"                      # Path to cloned V3D repository
 input_image_path = r"C:\V3D\baby_yoda.png"     # Input image path
 output_folder = r"C:\V3D\outputs"              # Output directory
