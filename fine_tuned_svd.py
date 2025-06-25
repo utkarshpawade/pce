@@ -139,7 +139,7 @@ def generate_multiview_images(
     save_video: bool,
     ignore_alpha: bool
 ):
-    # Create output directory
+
     os.makedirs(output_folder, exist_ok=True)
 
     # Load base model weights (svd_xt.safetensors)
