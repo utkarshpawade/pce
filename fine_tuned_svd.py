@@ -226,7 +226,6 @@ def generate_multiview_images(
         "cond_frames": ae_model.encode(image) + cond_aug * torch.randn_like(ae_model.encode(image))
     }
 
-    # Get batch for inference
     with torch.no_grad():
         with torch.autocast(device):
             batch, batch_uc = get_batch(
@@ -284,7 +283,6 @@ def generate_multiview_images(
     return images
 
 if __name__ == "__main__":
-    # Run the generation
     images = generate_multiview_images(
         input_path=input_image_path,
         checkpoint_path=checkpoint_path,
