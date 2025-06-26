@@ -60,8 +60,8 @@ save_video = True                              # Save output as video
 ignore_alpha = False                           # Ignore alpha channel if True
 
 # Utility functions (from V3D repository)
-def get_unique_embedder_keys_from_conditioner(conditioner):
-    return list(set([x.input_key for x in conditioner.embedders]))
+# def get_unique_embedder_keys_from_conditioner(conditioner):
+#     return list(set([x.input_key for x in conditioner.embedders]))
 
 def get_batch(keys, value_dict, N, T, device):
     batch = {}
